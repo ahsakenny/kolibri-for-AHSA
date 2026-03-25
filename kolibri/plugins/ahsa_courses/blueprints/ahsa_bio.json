@@ -1,0 +1,209 @@
+{
+  "course_id": "ahsa_bio",
+  "title": "Biology",
+  "description": "Comprehensive high school biology course covering cell biology, genetics, evolution, ecology, and human body systems. Aligned with Florida standards and designed for NCAA core science credit.",
+  "grade_band": "high",
+  "grade_level": 9,
+  "subject": "science",
+  "florida_standard_set": "SC.912.L",
+  "ncaa_core_area": "natural_science",
+  "is_ncaa_approved": false,
+  "duration": "full_year",
+  "credit_value": 1.0,
+  "total_weeks": 36,
+  "weekly_minutes": 225,
+  "is_honors": false,
+  "is_ap": false,
+  "requires_lab": true,
+  "syllabus": "Biology explores the fundamental principles of life science including cellular processes, genetics, evolution, and ecology. Students will engage in laboratory investigations, data analysis, and scientific writing.",
+  "pacing_guide": "Weeks 1-9: Cell structure and function\nWeeks 10-18: Genetics and heredity\nWeeks 19-27: Evolution and classification\nWeeks 28-36: Ecology and human systems",
+  "required_materials": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Biology 2e",
+      "source": "OpenStax",
+      "url": "https://openstax.org/details/books/biology-2e",
+      "license": "CC BY 4.0"
+    },
+    {
+      "type": "lab_materials",
+      "title": "Virtual Lab Simulations",
+      "source": "PhET Interactive Simulations",
+      "url": "https://phet.colorado.edu/"
+    }
+  ],
+  "teacher_notes": "Weekly lab reports require teacher feedback. Monitor student understanding through lab discussions. Ensure proper scientific methodology in experiments.",
+  "teacher_led": true,
+  "academic_integrity_policy": "All lab work must include original observations and data. Tests require proctoring. Collaboration allowed on labs but reports must be individual.",
+  "version": "1.0",
+  "grade_categories": [
+    {
+      "name": "Lab Reports",
+      "weight": 30.0,
+      "drop_lowest": 1
+    },
+    {
+      "name": "Weekly Quizzes",
+      "weight": 20.0,
+      "drop_lowest": 2
+    },
+    {
+      "name": "Unit Tests",
+      "weight": 25.0,
+      "drop_lowest": 0
+    },
+    {
+      "name": "Midterm Exam",
+      "weight": 10.0,
+      "drop_lowest": 0
+    },
+    {
+      "name": "Final Exam",
+      "weight": 15.0,
+      "drop_lowest": 0
+    }
+  ],
+  "weeks": [
+    {
+      "week_number": 1,
+      "title": "Introduction to Biology and Scientific Method",
+      "description": "Overview of biological sciences, scientific methodology, and laboratory safety.",
+      "objectives": [
+        "Understand the scientific method",
+        "Identify characteristics of life",
+        "Practice laboratory safety procedures",
+        "Design a simple experiment"
+      ],
+      "standards_alignment": [
+        "SC.912.N.1.1",
+        "SC.912.N.1.3",
+        "SC.912.L.14.1"
+      ],
+      "estimated_minutes": 225,
+      "requires_teacher_interaction": true,
+      "teacher_interaction_notes": "Review lab safety protocols with students. Approve experiment designs.",
+      "lesson_plans": [
+        {
+          "lesson_number": 1,
+          "title": "What is Biology?",
+          "description": "Introduction to the study of life",
+          "video_url": "https://www.khanacademy.org/science/biology/intro-to-biology",
+          "video_provider": "Khan Academy",
+          "reading_resource": {
+            "title": "OpenStax Biology Ch. 1: The Study of Life",
+            "source": "OpenStax",
+            "type": "textbook_section"
+          },
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 2,
+          "title": "The Scientific Method",
+          "description": "Understanding hypothesis, experiment, and conclusion",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 3,
+          "title": "Laboratory Safety and Equipment",
+          "description": "Safety protocols and proper use of lab equipment",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 4,
+          "title": "Virtual Lab: Designing an Experiment",
+          "description": "Practice designing and conducting a simple experiment",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 5,
+          "title": "Week 1 Review and Quiz",
+          "estimated_minutes": 45
+        }
+      ],
+      "assessments": [
+        {
+          "assessment_type": "weekly_quiz",
+          "title": "Week 1 Quiz: Scientific Method",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 30,
+          "is_proctored": false,
+          "has_teacher_grading": false
+        },
+        {
+          "assessment_type": "lab_report",
+          "title": "Lab 1: Designing an Experiment",
+          "description": "Design and document a simple biological experiment",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 60,
+          "is_proctored": false,
+          "has_teacher_grading": true,
+          "rubric": {
+            "hypothesis": 20,
+            "methodology": 30,
+            "data_collection": 20,
+            "analysis": 20,
+            "conclusion": 10
+          }
+        }
+      ]
+    },
+    {
+      "week_number": 18,
+      "title": "Midterm Review and Exam",
+      "description": "Comprehensive review and midterm examination",
+      "objectives": [
+        "Demonstrate understanding of cell biology and genetics",
+        "Analyze experimental data",
+        "Explain biological processes"
+      ],
+      "standards_alignment": [
+        "SC.912.L.14.1",
+        "SC.912.L.16.1"
+      ],
+      "estimated_minutes": 300,
+      "requires_teacher_interaction": true,
+      "assessments": [
+        {
+          "assessment_type": "midterm",
+          "title": "Biology Midterm Exam",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 90,
+          "is_proctored": true,
+          "has_teacher_grading": true
+        }
+      ]
+    },
+    {
+      "week_number": 36,
+      "title": "Final Exam and Course Wrap-Up",
+      "description": "Comprehensive final examination",
+      "objectives": [
+        "Demonstrate mastery of all biology topics",
+        "Analyze complex biological systems",
+        "Apply scientific reasoning"
+      ],
+      "standards_alignment": [
+        "SC.912.L.14.1",
+        "SC.912.L.16.1",
+        "SC.912.L.17.1",
+        "SC.912.L.18.1"
+      ],
+      "estimated_minutes": 300,
+      "requires_teacher_interaction": true,
+      "assessments": [
+        {
+          "assessment_type": "final",
+          "title": "Biology Final Exam",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 120,
+          "is_proctored": true,
+          "has_teacher_grading": true
+        }
+      ]
+    }
+  ]
+}

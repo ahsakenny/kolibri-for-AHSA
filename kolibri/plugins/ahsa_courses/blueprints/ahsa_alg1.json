@@ -1,0 +1,281 @@
+{
+  "course_id": "ahsa_alg1",
+  "title": "Algebra 1",
+  "description": "A comprehensive first-year algebra course aligned with Florida standards, covering linear equations, quadratic functions, exponential relationships, and data analysis. Designed for NCAA core mathematics credit.",
+  "grade_band": "high",
+  "grade_level": 9,
+  "subject": "math",
+  "florida_standard_set": "MAFS.912.A",
+  "ncaa_core_area": "mathematics",
+  "is_ncaa_approved": false,
+  "duration": "full_year",
+  "credit_value": 1.0,
+  "total_weeks": 36,
+  "weekly_minutes": 225,
+  "is_honors": false,
+  "is_ap": false,
+  "requires_lab": false,
+  "syllabus": "Algebra 1 develops mathematical proficiency in solving linear equations, graphing functions, working with polynomials, and analyzing data. Students will engage with real-world applications and develop problem-solving skills essential for higher mathematics.",
+  "pacing_guide": "Weeks 1-9: Linear equations and inequalities\nWeeks 10-18: Systems of equations and functions\nWeeks 19-27: Quadratic equations and functions\nWeeks 28-36: Exponential functions and data analysis",
+  "required_materials": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry",
+      "source": "OpenStax",
+      "url": "https://openstax.org/details/books/algebra-and-trigonometry",
+      "license": "CC BY 4.0"
+    },
+    {
+      "type": "software",
+      "title": "Desmos Graphing Calculator",
+      "source": "Desmos",
+      "url": "https://www.desmos.com/calculator"
+    }
+  ],
+  "teacher_notes": "Weekly teacher check-ins required for graded assignments. Monitor student progress on weekly quizzes. Provide feedback on written problem-solving explanations.",
+  "teacher_led": true,
+  "academic_integrity_policy": "All tests and quizzes must be completed independently. Collaboration is encouraged on practice problems. Midterm and final exams require proctoring.",
+  "version": "1.0",
+  "grade_categories": [
+    {
+      "name": "Weekly Quizzes",
+      "weight": 25.0,
+      "drop_lowest": 2
+    },
+    {
+      "name": "Unit Tests",
+      "weight": 30.0,
+      "drop_lowest": 0
+    },
+    {
+      "name": "Homework & Practice",
+      "weight": 20.0,
+      "drop_lowest": 3
+    },
+    {
+      "name": "Midterm Exam",
+      "weight": 10.0,
+      "drop_lowest": 0
+    },
+    {
+      "name": "Final Exam",
+      "weight": 15.0,
+      "drop_lowest": 0
+    }
+  ],
+  "weeks": [
+    {
+      "week_number": 1,
+      "title": "Introduction to Algebra and Variables",
+      "description": "Students will learn the basics of algebraic notation, variables, expressions, and order of operations.",
+      "objectives": [
+        "Evaluate algebraic expressions",
+        "Understand variables and constants",
+        "Apply order of operations",
+        "Translate word problems into algebraic expressions"
+      ],
+      "standards_alignment": [
+        "MAFS.912.A-SSE.1.1",
+        "MAFS.912.A-SSE.1.2"
+      ],
+      "estimated_minutes": 225,
+      "requires_teacher_interaction": true,
+      "teacher_interaction_notes": "Review student homework submissions. Provide feedback on expression translations.",
+      "lesson_plans": [
+        {
+          "lesson_number": 1,
+          "title": "Variables and Expressions",
+          "description": "Introduction to algebraic variables and writing expressions",
+          "video_url": "https://www.khanacademy.org/math/algebra/introduction-to-algebra",
+          "video_provider": "Khan Academy",
+          "reading_resource": {
+            "title": "OpenStax Algebra Ch. 1.1: Variables and Expressions",
+            "source": "OpenStax",
+            "type": "textbook_section"
+          },
+          "guided_notes": "Define variables. Practice writing expressions from word problems.",
+          "practice_activity": "Complete 20 practice problems on variable expressions",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 2,
+          "title": "Order of Operations (PEMDAS)",
+          "description": "Review and practice order of operations",
+          "video_url": "https://www.khanacademy.org/math/pre-algebra/order-of-operations",
+          "video_provider": "Khan Academy",
+          "reading_resource": {
+            "title": "OpenStax Algebra Ch. 1.2: Order of Operations",
+            "source": "OpenStax",
+            "type": "textbook_section"
+          },
+          "practice_activity": "Solve 25 expressions using correct order of operations",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 3,
+          "title": "Evaluating Expressions",
+          "description": "Substitute values and evaluate algebraic expressions",
+          "practice_activity": "Complete evaluation worksheet with 30 problems",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 4,
+          "title": "Simplifying Expressions",
+          "description": "Combine like terms and simplify expressions",
+          "practice_activity": "Simplification practice set",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 5,
+          "title": "Week 1 Review and Quiz",
+          "description": "Review key concepts and take weekly quiz",
+          "estimated_minutes": 45
+        }
+      ],
+      "assessments": [
+        {
+          "assessment_type": "weekly_quiz",
+          "title": "Week 1 Quiz: Variables and Expressions",
+          "description": "15-question quiz covering variables, expressions, and order of operations",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 30,
+          "is_proctored": false,
+          "has_teacher_grading": false,
+          "rubric": {
+            "auto_graded": true,
+            "question_types": ["multiple_choice", "numeric_input"]
+          }
+        }
+      ]
+    },
+    {
+      "week_number": 2,
+      "title": "Solving One-Step Equations",
+      "description": "Introduction to solving basic linear equations using addition, subtraction, multiplication, and division.",
+      "objectives": [
+        "Solve one-step equations using inverse operations",
+        "Check solutions to equations",
+        "Model real-world situations with one-step equations"
+      ],
+      "standards_alignment": [
+        "MAFS.912.A-REI.1.1",
+        "MAFS.912.A-REI.2.3"
+      ],
+      "estimated_minutes": 225,
+      "requires_teacher_interaction": true,
+      "lesson_plans": [
+        {
+          "lesson_number": 1,
+          "title": "Addition and Subtraction Equations",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 2,
+          "title": "Multiplication and Division Equations",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 3,
+          "title": "Checking Solutions",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 4,
+          "title": "Real-World Applications",
+          "estimated_minutes": 45
+        },
+        {
+          "lesson_number": 5,
+          "title": "Week 2 Review and Quiz",
+          "estimated_minutes": 45
+        }
+      ],
+      "assessments": [
+        {
+          "assessment_type": "weekly_quiz",
+          "title": "Week 2 Quiz: One-Step Equations",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 30,
+          "is_proctored": false,
+          "has_teacher_grading": false
+        }
+      ]
+    },
+    {
+      "week_number": 18,
+      "title": "Midterm Review and Exam",
+      "description": "Comprehensive review of Weeks 1-17 and midterm examination.",
+      "objectives": [
+        "Demonstrate mastery of linear equations and inequalities",
+        "Apply concepts to multi-step problems",
+        "Show work and explain problem-solving strategies"
+      ],
+      "standards_alignment": [
+        "MAFS.912.A-REI.1.1",
+        "MAFS.912.A-REI.2.3",
+        "MAFS.912.A-CED.1.1"
+      ],
+      "estimated_minutes": 300,
+      "requires_teacher_interaction": true,
+      "teacher_interaction_notes": "Proctor midterm exam. Review exams with students individually.",
+      "assessments": [
+        {
+          "assessment_type": "midterm",
+          "title": "Semester 1 Midterm Exam",
+          "description": "Comprehensive exam covering all material from Weeks 1-17",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 90,
+          "is_proctored": true,
+          "proctoring_requirements": "Must be proctored by certified teacher or approved proctor. Photo ID required.",
+          "has_teacher_grading": true,
+          "rubric": {
+            "multiple_choice": 50,
+            "short_answer": 30,
+            "word_problems": 20
+          }
+        }
+      ]
+    },
+    {
+      "week_number": 36,
+      "title": "Final Exam and Course Wrap-Up",
+      "description": "Final examination covering all course material and course reflection.",
+      "objectives": [
+        "Demonstrate comprehensive understanding of Algebra 1 concepts",
+        "Apply skills to complex problems",
+        "Reflect on mathematical growth"
+      ],
+      "standards_alignment": [
+        "MAFS.912.A-REI.1.1",
+        "MAFS.912.A-REI.2.3",
+        "MAFS.912.A-CED.1.1",
+        "MAFS.912.F-IF.1.1"
+      ],
+      "estimated_minutes": 300,
+      "requires_teacher_interaction": true,
+      "teacher_interaction_notes": "Proctor final exam. Provide final grade feedback and recommendations for next math course.",
+      "assessments": [
+        {
+          "assessment_type": "final",
+          "title": "Algebra 1 Final Exam",
+          "description": "Comprehensive final examination covering all course content",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 120,
+          "is_proctored": true,
+          "proctoring_requirements": "Must be proctored by certified teacher or approved proctor. Photo ID required.",
+          "has_teacher_grading": true,
+          "rubric": {
+            "multiple_choice": 40,
+            "short_answer": 30,
+            "word_problems": 20,
+            "extended_response": 10
+          }
+        }
+      ]
+    }
+  ]
+}

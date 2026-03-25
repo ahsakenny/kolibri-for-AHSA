@@ -1,0 +1,122 @@
+{
+  "course_id": "ahsa_g6_math",
+  "title": "Grade 6 Mathematics",
+  "description": "Middle school mathematics covering ratios, proportions, integers, expressions, equations, and introductory geometry. Aligned with Florida standards for grade 6.",
+  "grade_band": "middle",
+  "grade_level": 6,
+  "subject": "math",
+  "florida_standard_set": "MAFS.6",
+  "ncaa_core_area": "none",
+  "duration": "full_year",
+  "credit_value": 1.0,
+  "total_weeks": 36,
+  "weekly_minutes": 225,
+  "is_honors": false,
+  "is_ap": false,
+  "requires_lab": false,
+  "syllabus": "Grade 6 Mathematics builds foundational skills in ratios, proportional reasoning, integer operations, algebraic expressions, and geometric concepts essential for success in higher mathematics.",
+  "teacher_led": true,
+  "academic_integrity_policy": "Students must show all work. Tests are individually completed. Collaboration allowed on practice problems.",
+  "version": "1.0",
+  "grade_categories": [
+    {
+      "name": "Weekly Quizzes",
+      "weight": 30.0,
+      "drop_lowest": 3
+    },
+    {
+      "name": "Homework & Practice",
+      "weight": 25.0,
+      "drop_lowest": 4
+    },
+    {
+      "name": "Unit Tests",
+      "weight": 25.0,
+      "drop_lowest": 1
+    },
+    {
+      "name": "Midterm Exam",
+      "weight": 10.0,
+      "drop_lowest": 0
+    },
+    {
+      "name": "Final Exam",
+      "weight": 10.0,
+      "drop_lowest": 0
+    }
+  ],
+  "weeks": [
+    {
+      "week_number": 1,
+      "title": "Ratios and Rates",
+      "description": "Introduction to ratios, rates, and unit rates",
+      "objectives": [
+        "Understand and write ratios",
+        "Calculate unit rates",
+        "Solve ratio problems",
+        "Apply ratios to real-world situations"
+      ],
+      "standards_alignment": ["MAFS.6.RP.1.1", "MAFS.6.RP.1.2"],
+      "estimated_minutes": 225,
+      "requires_teacher_interaction": true,
+      "lesson_plans": [
+        {
+          "lesson_number": 1,
+          "title": "Introduction to Ratios",
+          "estimated_minutes": 45
+        }
+      ],
+      "assessments": [
+        {
+          "assessment_type": "weekly_quiz",
+          "title": "Week 1 Quiz: Ratios and Rates",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 25,
+          "is_proctored": false,
+          "has_teacher_grading": false
+        }
+      ]
+    },
+    {
+      "week_number": 18,
+      "title": "Midterm Review and Exam",
+      "description": "Comprehensive review and midterm examination",
+      "objectives": ["Demonstrate mastery of ratios, integers, and expressions"],
+      "standards_alignment": ["MAFS.6.RP.1.1", "MAFS.6.NS.3.6", "MAFS.6.EE.1.2"],
+      "estimated_minutes": 300,
+      "requires_teacher_interaction": true,
+      "assessments": [
+        {
+          "assessment_type": "midterm",
+          "title": "Grade 6 Math Midterm",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 60,
+          "is_proctored": true,
+          "has_teacher_grading": true
+        }
+      ]
+    },
+    {
+      "week_number": 36,
+      "title": "Final Exam",
+      "description": "Comprehensive final examination",
+      "objectives": ["Demonstrate comprehensive understanding of grade 6 math concepts"],
+      "standards_alignment": ["MAFS.6.RP.1.1", "MAFS.6.NS.3.6", "MAFS.6.EE.1.2", "MAFS.6.G.1.1"],
+      "estimated_minutes": 300,
+      "requires_teacher_interaction": true,
+      "assessments": [
+        {
+          "assessment_type": "final",
+          "title": "Grade 6 Math Final Exam",
+          "points_possible": 100,
+          "weight": 1.0,
+          "estimated_minutes": 75,
+          "is_proctored": true,
+          "has_teacher_grading": true
+        }
+      ]
+    }
+  ]
+}
