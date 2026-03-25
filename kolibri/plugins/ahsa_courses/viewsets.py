@@ -13,6 +13,10 @@ from .models import GradeCategory
 from .models import LessonPlan
 from .models import Semester
 from .models import Week
+from .reports import NCAAComplianceReporter
+from .reports import NCAASyllabusExporter
+from .reports import PacingGuideExporter
+from .reports import StandardsAlignmentReporter
 from .serializers import AssessmentSerializer
 from .serializers import CourseBlueprintListSerializer
 from .serializers import CourseBlueprintSerializer
@@ -134,27 +138,39 @@ class CourseBlueprintViewSet(viewsets.ModelViewSet):
         Shows which Florida standards are covered in which weeks.
         """
         course = self.get_object()
-        weeks = course.weeks.all().order_by("week_number")
+        report = StandardsAlignmentReporter.generate_alignment_report(course)
+        return Response(report)
 
-        # Collect all standards across all weeks
-        standards_map = {}
-        for week in weeks:
-            for standard in week.standards_alignment:
-                if standard not in standards_map:
-                    standards_map[standard] = []
-                standards_map[standard].append(
-                    {"week_number": week.week_number, "week_title": week.title}
-                )
+    @action(detail=True, methods=["get"])
+    def ncaa_compliance(self, request, pk=None):
+        """
+        Generate NCAA compliance report.
 
-        alignment_data = {
-            "course_title": course.title,
-            "florida_standard_set": course.florida_standard_set,
-            "standards_coverage": [
-                {"standard": standard, "weeks_covered": weeks_list}
-                for standard, weeks_list in sorted(standards_map.items())
-            ],
-        }
-        return Response(alignment_data)
+        Returns comprehensive checklist of NCAA requirements.
+        """
+        course = self.get_object()
+        report = NCAAComplianceReporter.generate_compliance_report(course)
+        return Response(report)
+
+    @action(detail=True, methods=["get"])
+    def download_syllabus(self, request, pk=None):
+        """
+        Download formatted syllabus as text file.
+
+        Returns NCAA-compliant syllabus document.
+        """
+        course = self.get_object()
+        return NCAASyllabusExporter.export_to_http_response(course)
+
+    @action(detail=True, methods=["get"])
+    def download_pacing_guide(self, request, pk=None):
+        """
+        Download pacing guide as CSV file.
+
+        Returns week-by-week breakdown with standards and assessments.
+        """
+        course = self.get_object()
+        return PacingGuideExporter.export_to_http_response(course)
 
 
 class SemesterViewSet(viewsets.ModelViewSet):
